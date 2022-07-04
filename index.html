@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="card">
+      <div id="balanceSection">
+        <div id="balance">
+          <p id="balanceTitle">My balance</p>
+          <h3 id="balanceNumber">$921.48</h3>
+        </div>
+        <svg
+        class="progress-ring"
+        width="90"
+        height="60">
+        <circle 
+        class="circle"
+        fill="#392316"
+        r="20"
+        cx="60"
+        cy="30"
+        />
+        <circle
+          class="ring"
+          stroke="white"
+          stroke-width="1.5"
+          fill="transparent"
+          r="20"
+          cx="35"
+          cy="30"/>
+
+        </svg>
+      </div>
+      <div id="spendingSection">
+        <h3 id="spendingHead">Spending - Last 7 days</h3>
+        <div id="graph">
+          <div id="mon" class="graph" style="height: 33%"></div>
+          <div class="money" style="transform: translate(-10%, -325%)">$17.45</div>
+          <div id="tue" class="graph" style="height: 67%"></div>
+          <div class="money" style="transform: translate(-10%, -450%); grid-column: 2;">$34.91</div>
+          <div id="wed" class="graph" style="height: 100%"></div>
+          <div class="money" style="transform: translate(-10%, -565%); grid-column: 3;">$52.36</div>
+          <div id="thu" class="graph" style="height: 59%"></div>
+          <div class="money" style="transform: translate(-10%, -425%); grid-column: 4;">$31.07</div>
+          <div id="fri" class="graph" style="height: 45%"></div>
+          <div class="money" style="transform: translate(-10%, -375%); grid-column: 5;">$23.39</div>
+          <div id="sat" class="graph" style="height: 83%"></div>
+          <div class="money" style="transform: translate(-10%, -500%); grid-column: 6;">$43.28</div>
+          <div id="sun" class="graph" style="height: 49%"></div>
+          <div class="money" style="transform: translate(-10%, -390%); grid-column: 7;">$25.48</div>
+          <p class="date">mon</p>
+          <p class="date">tue</p>
+          <p class="date">wed</p>
+          <p class="date">thu</p>
+          <p class="date">fri</p>
+          <p class="date">sat</p>
+          <p class="date">sun</p>
+        </div>
+        <hr/>
+        <div id="spending">
+          <div id="total">
+            <p id="totalTitle">Total this month</p>
+            <h3 id="totalNumber">$478.33</h3>
+          </div>
+          <div id="increase">
+            <p id="increaseNumber">+2.4%</p>
+            <p id="increaseTitle">from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+body {
+    overflow: hidden;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#card {
+    background-color: #f7e9dc;
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 0.2rem;
+    box-shadow: 0.2rem 0.3rem 20px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#balanceSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30%;
+    width: 33%;
+    height: 10vh;
+    background-color: #ec755d;
+    border-radius: 1rem;
+    color: #fffcf7;
+
+}
+
+.progress-ring {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    justify-self: center;
+    align-self: center;
+}
+
+#balance {
+    justify-self: center;
+    align-self: center;
+}
+
+#balanceTitle {
+    font-weight: lighter;
+    font-size: small;
+    margin-top: -2%;
+    letter-spacing: 0.5px;
+}
+
+#balanceNumber {
+    font-weight: normal;
+    letter-spacing: 0.1px;
+    font-size: x-large;
+    margin: 0;
+}
+
+
+#spendingSection {
+    background-color: #fffcf7;
+    width: 33%;
+    height: 40vh;
+    border-radius: 1rem;
+    margin-top: 2vh;
+    color: #201f1f;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+#spendingHead {
+    font-weight: bold;
+    font-size: x-large;
+    margin-left: 7%;
+}
+
+#graph {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 15vh;
+    width: 90%;
+    align-self: center;
+    grid-template-rows: [row1-start] 80% [row1-end] 20% [third-line] auto [last-line];
+    grid-column-gap: 3%;
+    padding-top: 8%;
+}
+
+.graph {
+    background-color: #ec755d;
+    border-radius: 5px;
+    align-self: end;
+}
+
+.graph:hover {
+    background-color: #e68b79;
+}
+
+
+.date {
+    align-self: start;
+    justify-self: center;
+    margin-top: 5px;
+    font-size: 10px;
+    color: rgb(150, 150, 150);
+}
+
+#wed {
+    background-color: #76b5bc;
+}
+
+#wed:hover {
+    background-color: #9de4ec;
+}
+
+hr {
+    width: 90%;
+    height: 2px;
+    background-color: #f7e9dc;
+    border-width: 0.0px;
+}
+
+#spending {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10%;
+    width: 90%;
+    align-self: center;
+}
+
+#totalTitle {
+    font-weight: lighter;
+    font-size: smaller;
+    margin-top: -2%;
+    color: #cac7c0;
+    margin-top: 1.5vh;
+    margin-bottom: 0;
+}
+
+#totalNumber {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-size: xx-large;
+    margin: 0;
+}
+
+#increaseTitle {
+    font-weight: lighter;
+    font-size: smaller;
+    color: #cac7c0;
+    margin: 0;
+}
+
+#increaseNumber {
+    font-weight: bolder;
+    font-size: small;
+    margin-bottom: 0;
+    margin-left: 60%;
+}
+
+#increase {
+    justify-self: end;
+    margin-top: 2vh;
+}
+
+.money {
+    background-color: #372314;
+    width: 125%;
+    height: 2rem;
+    text-align: center;
+    text-justify: center;
+    color: #dfd0c9;
+    border-radius: 5px;
+    line-height: 2rem;
+    font-size: small;
+    font-weight: bold;
+    display: none;
+    grid-row: none;
+}
+
+.graph:hover + .money {
+    display: block;
+    color: #dfd0c9;
+    background-color: #372314;
+}
